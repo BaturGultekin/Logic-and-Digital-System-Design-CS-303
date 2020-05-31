@@ -1,0 +1,324 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CarryRippleFullAdderSubtractor15Bits.vf
+// /___/   /\     Timestamp : 11/06/2019 06:49:55
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Xilinx/Projects/Lab-3-Final/CarryRippleFullAdderSubtractor15Bits.vf -w C:/Xilinx/Projects/BaturGultekin_24188_EgeNalbant_24859/CarryRippleFullAdderSubtractor15Bits.sch
+//Design Name: CarryRippleFullAdderSubtractor15Bits
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits(A, 
+                                                            B, 
+                                                            C, 
+                                                            Carry, 
+                                                            Sum);
+
+    input A;
+    input B;
+    input C;
+   output Carry;
+   output Sum;
+   
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   
+   AND2  XLXI_3 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_10));
+   AND2  XLXI_4 (.I0(C), 
+                .I1(A), 
+                .O(XLXN_11));
+   AND2  XLXI_5 (.I0(C), 
+                .I1(B), 
+                .O(XLXN_12));
+   XOR3  XLXI_6 (.I0(XLXN_12), 
+                .I1(XLXN_11), 
+                .I2(XLXN_10), 
+                .O(Carry));
+   XOR3  XLXI_7 (.I0(C), 
+                .I1(B), 
+                .I2(A), 
+                .O(Sum));
+endmodule
+`timescale 1ns / 1ps
+
+module CarryRippleFullAdderSubtractor15Bits(A0, 
+                                            A1, 
+                                            A2, 
+                                            A3, 
+                                            A4, 
+                                            A5, 
+                                            A6, 
+                                            A7, 
+                                            A8, 
+                                            A9, 
+                                            A10, 
+                                            A11, 
+                                            A12, 
+                                            A13, 
+                                            A14, 
+                                            B0, 
+                                            B1, 
+                                            B2, 
+                                            B3, 
+                                            B4, 
+                                            B5, 
+                                            B6, 
+                                            B7, 
+                                            B8, 
+                                            B9, 
+                                            B10, 
+                                            B11, 
+                                            B12, 
+                                            B13, 
+                                            B14, 
+                                            C0, 
+                                            S0, 
+                                            S1, 
+                                            S2, 
+                                            S3, 
+                                            S4, 
+                                            S5, 
+                                            S6, 
+                                            S7, 
+                                            S8, 
+                                            S9, 
+                                            S10, 
+                                            S11, 
+                                            S12, 
+                                            S13, 
+                                            S14, 
+                                            V);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input A4;
+    input A5;
+    input A6;
+    input A7;
+    input A8;
+    input A9;
+    input A10;
+    input A11;
+    input A12;
+    input A13;
+    input A14;
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+    input B4;
+    input B5;
+    input B6;
+    input B7;
+    input B8;
+    input B9;
+    input B10;
+    input B11;
+    input B12;
+    input B13;
+    input B14;
+    input C0;
+   output S0;
+   output S1;
+   output S2;
+   output S3;
+   output S4;
+   output S5;
+   output S6;
+   output S7;
+   output S8;
+   output S9;
+   output S10;
+   output S11;
+   output S12;
+   output S13;
+   output S14;
+   output V;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_31;
+   wire XLXN_32;
+   wire XLXN_33;
+   wire XLXN_37;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_84;
+   wire XLXN_90;
+   wire XLXN_91;
+   wire XLXN_92;
+   wire XLXN_93;
+   wire XLXN_347;
+   wire XLXN_348;
+   
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_4 (.A(A0), 
+                                                                .B(XLXN_10), 
+                                                                .C(C0), 
+                                                                
+         .Carry(XLXN_31), 
+                                                                .Sum(S0));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_5 (.A(A1), 
+                                                                .B(XLXN_11), 
+                                                                .C(XLXN_31), 
+                                                                
+         .Carry(XLXN_32), 
+                                                                .Sum(S1));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_6 (.A(A2), 
+                                                                .B(XLXN_12), 
+                                                                .C(XLXN_32), 
+                                                                
+         .Carry(XLXN_33), 
+                                                                .Sum(S2));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_7 (.A(A3), 
+                                                                .B(XLXN_1), 
+                                                                .C(XLXN_33), 
+                                                                
+         .Carry(XLXN_37), 
+                                                                .Sum(S3));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_8 (.A(A4), 
+                                                                .B(XLXN_2), 
+                                                                .C(XLXN_37), 
+                                                                
+         .Carry(XLXN_38), 
+                                                                .Sum(S4));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_9 (.A(A5), 
+                                                                .B(XLXN_3), 
+                                                                .C(XLXN_38), 
+                                                                
+         .Carry(XLXN_39), 
+                                                                .Sum(S5));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_10 (.A(A6), 
+                                                                 .B(XLXN_6), 
+                                                                 .C(XLXN_39), 
+                                                                 
+         .Carry(XLXN_42), 
+                                                                 .Sum(S6));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_11 (.A(A7), 
+                                                                 .B(XLXN_5), 
+                                                                 .C(XLXN_42), 
+                                                                 
+         .Carry(XLXN_43), 
+                                                                 .Sum(S7));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_12 (.A(A8), 
+                                                                 .B(XLXN_4), 
+                                                                 .C(XLXN_43), 
+                                                                 
+         .Carry(XLXN_44), 
+                                                                 .Sum(S8));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_13 (.A(A9), 
+                                                                 .B(XLXN_7), 
+                                                                 .C(XLXN_44), 
+                                                                 
+         .Carry(XLXN_46), 
+                                                                 .Sum(S9));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_14 (.A(A10), 
+                                                                 .B(XLXN_8), 
+                                                                 .C(XLXN_46), 
+                                                                 
+         .Carry(XLXN_45), 
+                                                                 .Sum(S10));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_15 (.A(A11), 
+                                                                 .B(XLXN_9), 
+                                                                 .C(XLXN_45), 
+                                                                 
+         .Carry(XLXN_90), 
+                                                                 .Sum(S11));
+   XOR2  XLXI_16 (.I0(C0), 
+                 .I1(B3), 
+                 .O(XLXN_1));
+   XOR2  XLXI_17 (.I0(C0), 
+                 .I1(B4), 
+                 .O(XLXN_2));
+   XOR2  XLXI_18 (.I0(C0), 
+                 .I1(B5), 
+                 .O(XLXN_3));
+   XOR2  XLXI_19 (.I0(C0), 
+                 .I1(B8), 
+                 .O(XLXN_4));
+   XOR2  XLXI_20 (.I0(C0), 
+                 .I1(B7), 
+                 .O(XLXN_5));
+   XOR2  XLXI_21 (.I0(C0), 
+                 .I1(B6), 
+                 .O(XLXN_6));
+   XOR2  XLXI_22 (.I0(C0), 
+                 .I1(B9), 
+                 .O(XLXN_7));
+   XOR2  XLXI_23 (.I0(C0), 
+                 .I1(B10), 
+                 .O(XLXN_8));
+   XOR2  XLXI_24 (.I0(C0), 
+                 .I1(B11), 
+                 .O(XLXN_9));
+   XOR2  XLXI_25 (.I0(C0), 
+                 .I1(B0), 
+                 .O(XLXN_10));
+   XOR2  XLXI_26 (.I0(C0), 
+                 .I1(B1), 
+                 .O(XLXN_11));
+   XOR2  XLXI_27 (.I0(C0), 
+                 .I1(B2), 
+                 .O(XLXN_12));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_52 (.A(A12), 
+                                                                 .B(XLXN_91), 
+                                                                 .C(XLXN_90), 
+                                                                 
+         .Carry(XLXN_84), 
+                                                                 .Sum(S12));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_53 (.A(A13), 
+                                                                 .B(XLXN_92), 
+                                                                 .C(XLXN_84), 
+                                                                 
+         .Carry(XLXN_347), 
+                                                                 .Sum(S13));
+   FullAdder_MUSER_CarryRippleFullAdderSubtractor15Bits  XLXI_54 (.A(A14), 
+                                                                 .B(XLXN_93), 
+                                                                 .C(XLXN_347), 
+                                                                 
+         .Carry(XLXN_348), 
+                                                                 .Sum(S14));
+   XOR2  XLXI_55 (.I0(C0), 
+                 .I1(B12), 
+                 .O(XLXN_91));
+   XOR2  XLXI_56 (.I0(C0), 
+                 .I1(B13), 
+                 .O(XLXN_92));
+   XOR2  XLXI_57 (.I0(C0), 
+                 .I1(B14), 
+                 .O(XLXN_93));
+   XOR2  XLXI_148 (.I0(XLXN_347), 
+                  .I1(XLXN_348), 
+                  .O(V));
+endmodule

@@ -1,0 +1,29 @@
+Command line:
+   HybridCLAdderTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63904
+
+Mon Nov 18 00:19:07 2019
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5160.7 Meg
+
+ Total Signals          : 70
+ Total Nets             : 135
+ Total Signal Drivers   : 99
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 101
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 246
+Total Line Count : 63
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 5475.27 Meg
+
+Mon Nov 18 00:19:50 2019
+

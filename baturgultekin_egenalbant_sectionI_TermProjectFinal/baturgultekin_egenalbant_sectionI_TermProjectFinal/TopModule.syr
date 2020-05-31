@@ -1,0 +1,633 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: TopModule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TopModule.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TopModule"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-tq144
+
+---- Source Options
+Top Module Name                    : TopModule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ssd.v" in library work
+Compiling verilog file "debouncer.v" in library work
+Module <ssd> compiled
+Compiling verilog file "clk_divider.v" in library work
+Module <debouncer> compiled
+Compiling verilog file "baturgultekin_egenalbant_sectionI_TermProjectSim.v" in library work
+Module <clk_divider> compiled
+Compiling verilog file "TopModule.v" in library work
+Module <baturgultekin_egenalbant_sectionI_TermProjSimulation> compiled
+Module <TopModule> compiled
+No errors in compilation
+Analysis of file <"TopModule.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <TopModule> in library <work>.
+
+Analyzing hierarchy for module <clk_divider> in library <work> with parameters.
+	toggle_value = "00000000000010011000100101101000"
+
+Analyzing hierarchy for module <debouncer> in library <work>.
+
+Analyzing hierarchy for module <ssd> in library <work>.
+
+Analyzing hierarchy for module <baturgultekin_egenalbant_sectionI_TermProjSimulation> in library <work> with parameters.
+	ATM_MENU = "00000000000000000000000000000101"
+	IDLE = "00000000000000000000000000000000"
+	LOCK = "00000000000000000000000000000100"
+	MONEY = "00000000000000000000000000000110"
+	PASS_CHG_1 = "00000000000000000000000000001010"
+	PASS_CHG_2 = "00000000000000000000000000001001"
+	PASS_CHG_3 = "00000000000000000000000000001000"
+	PASS_ENT_1 = "00000000000000000000000000000011"
+	PASS_ENT_2 = "00000000000000000000000000000010"
+	PASS_ENT_3 = "00000000000000000000000000000001"
+	PASS_NEW = "00000000000000000000000000001011"
+	WARNING = "00000000000000000000000000000111"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <TopModule>.
+Module <TopModule> is correct for synthesis.
+ 
+Analyzing module <clk_divider> in library <work>.
+	toggle_value = 32'sb00000000000010011000100101101000
+Module <clk_divider> is correct for synthesis.
+ 
+Analyzing module <debouncer> in library <work>.
+Module <debouncer> is correct for synthesis.
+ 
+Analyzing module <ssd> in library <work>.
+Module <ssd> is correct for synthesis.
+ 
+Analyzing module <baturgultekin_egenalbant_sectionI_TermProjSimulation> in library <work>.
+	ATM_MENU = 32'sb00000000000000000000000000000101
+	IDLE = 32'sb00000000000000000000000000000000
+	LOCK = 32'sb00000000000000000000000000000100
+	MONEY = 32'sb00000000000000000000000000000110
+	PASS_CHG_1 = 32'sb00000000000000000000000000001010
+	PASS_CHG_2 = 32'sb00000000000000000000000000001001
+	PASS_CHG_3 = 32'sb00000000000000000000000000001000
+	PASS_ENT_1 = 32'sb00000000000000000000000000000011
+	PASS_ENT_2 = 32'sb00000000000000000000000000000010
+	PASS_ENT_3 = 32'sb00000000000000000000000000000001
+	PASS_NEW = 32'sb00000000000000000000000000001011
+	WARNING = 32'sb00000000000000000000000000000111
+Module <baturgultekin_egenalbant_sectionI_TermProjSimulation> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk_divider>.
+    Related source file is "clk_divider.v".
+    Found 1-bit register for signal <divided_clk>.
+    Found 25-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clk_divider> synthesized.
+
+
+Synthesizing Unit <debouncer>.
+    Related source file is "debouncer.v".
+    Found 1-bit register for signal <clean_out>.
+    Found 1-bit register for signal <clean_out_tmp1>.
+    Found 1-bit register for signal <clean_out_tmp2>.
+    Found 1-bit register for signal <noisy_in_reg>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <ssd>.
+    Related source file is "ssd.v".
+    Found 1-bit register for signal <a>.
+    Found 1-bit register for signal <b>.
+    Found 1-bit register for signal <c>.
+    Found 1-bit register for signal <d>.
+    Found 1-bit register for signal <e>.
+    Found 1-bit register for signal <f>.
+    Found 1-bit register for signal <g>.
+    Found 1-bit register for signal <an0>.
+    Found 1-bit register for signal <an1>.
+    Found 1-bit register for signal <an2>.
+    Found 1-bit register for signal <an3>.
+    Found 15-bit up counter for signal <counter>.
+    Found 3-bit up counter for signal <state>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  11 D-type flip-flop(s).
+Unit <ssd> synthesized.
+
+
+Synthesizing Unit <baturgultekin_egenalbant_sectionI_TermProjSimulation>.
+    Related source file is "baturgultekin_egenalbant_sectionI_TermProjectSim.v".
+    Found 7-bit register for signal <digit1>.
+    Found 7-bit register for signal <digit2>.
+    Found 7-bit register for signal <digit3>.
+    Found 7-bit register for signal <digit4>.
+    Found 8-bit register for signal <LED>.
+    Found 16-bit updown accumulator for signal <balance>.
+    Found 16-bit comparator lessequal for signal <balance$cmp_le0000> created at line 359.
+    Found 16-bit register for signal <counter>.
+    Found 16-bit adder for signal <counter$addsub0000>.
+    Found 4-bit register for signal <current_state>.
+    Found 4-bit comparator equal for signal <next_state$cmp_eq0002> created at line 61.
+    Found 16-bit comparator greater for signal <next_state$cmp_gt0000> created at line 99.
+    Found 4-bit register for signal <password>.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred  60 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <baturgultekin_egenalbant_sectionI_TermProjSimulation> synthesized.
+
+
+Synthesizing Unit <TopModule>.
+    Related source file is "TopModule.v".
+Unit <TopModule> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Counters                                             : 3
+ 15-bit up counter                                     : 1
+ 25-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 16-bit updown accumulator                             : 1
+# Registers                                            : 32
+ 1-bit register                                        : 24
+ 16-bit register                                       : 1
+ 4-bit register                                        : 2
+ 7-bit register                                        : 4
+ 8-bit register                                        : 1
+# Comparators                                          : 3
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 1
+ 4-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Counters                                             : 3
+ 15-bit up counter                                     : 1
+ 25-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 16-bit updown accumulator                             : 1
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+# Comparators                                          : 3
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 1
+ 4-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TopModule> ...
+
+Optimizing unit <ssd> ...
+
+Optimizing unit <baturgultekin_egenalbant_sectionI_TermProjSimulation> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TopModule, actual ratio is 23.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 143
+ Flip-Flops                                            : 143
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TopModule.ngr
+Top Level Output File Name         : TopModule
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 526
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 54
+#      LUT2                        : 48
+#      LUT2_L                      : 4
+#      LUT3                        : 37
+#      LUT3_L                      : 3
+#      LUT4                        : 149
+#      LUT4_D                      : 4
+#      LUT4_L                      : 17
+#      MUXCY                       : 82
+#      MUXF5                       : 46
+#      MUXF6                       : 1
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 72
+# FlipFlops/Latches                : 143
+#      FDC                         : 57
+#      FDCE                        : 21
+#      FDE                         : 36
+#      FDR                         : 15
+#      FDRE                        : 3
+#      FDS                         : 11
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 8
+#      OBUF                        : 19
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-4 
+
+ Number of Slices:                      171  out of    960    17%  
+ Number of Slice Flip Flops:            143  out of   1920     7%  
+ Number of 4 input LUTs:                322  out of   1920    16%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    108    25%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 55    |
+clock_scaler/divided_clk1          | BUFG                   | 88    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 78    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.697ns (Maximum Frequency: 129.921MHz)
+   Minimum input arrival time before clock: 8.233ns
+   Maximum output required time after clock: 4.394ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.418ns (frequency: 155.812MHz)
+  Total number of paths / destination ports: 1419 / 74
+-------------------------------------------------------------------------
+Delay:               6.418ns (Levels of Logic = 3)
+  Source:            deb/counter_14 (FF)
+  Destination:       deb/counter_14 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: deb/counter_14 to deb/counter_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  deb/counter_14 (deb/counter_14)
+     LUT4:I0->O            1   0.704   0.499  deb/counter_or0000119 (deb/counter_or0000119)
+     LUT4:I1->O            4   0.704   0.666  deb/counter_or0000162 (deb/state_cmp_eq0001)
+     LUT2:I1->O           15   0.704   1.017  deb/counter_or00002 (deb/counter_or0000)
+     FDR:R                     0.911          deb/counter_0
+    ----------------------------------------
+    Total                      6.418ns (3.614ns logic, 2.804ns route)
+                                       (56.3% logic, 43.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_scaler/divided_clk1'
+  Clock period: 7.697ns (frequency: 129.921MHz)
+  Total number of paths / destination ports: 4753 / 101
+-------------------------------------------------------------------------
+Delay:               7.697ns (Levels of Logic = 25)
+  Source:            calc/balance_0 (FF)
+  Destination:       calc/balance_15 (FF)
+  Source Clock:      clock_scaler/divided_clk1 rising
+  Destination Clock: clock_scaler/divided_clk1 rising
+
+  Data Path: calc/balance_0 to calc/balance_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.591   0.899  calc/balance_0 (calc/balance_0)
+     LUT2:I1->O            1   0.704   0.000  calc/Mcompar_next_state_cmp_gt0000_lut<0> (calc/Mcompar_next_state_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<0> (calc/Mcompar_next_state_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<1> (calc/Mcompar_next_state_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<2> (calc/Mcompar_next_state_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<3> (calc/Mcompar_next_state_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<4> (calc/Mcompar_next_state_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<5> (calc/Mcompar_next_state_cmp_gt0000_cy<5>)
+     MUXCY:CI->O          19   0.459   1.164  calc/Mcompar_next_state_cmp_gt0000_cy<6> (calc/Mcompar_next_state_cmp_gt0000_cy<6>)
+     LUT2:I1->O            1   0.704   0.420  calc/balance_not0003_inv2 (calc/balance_not0003_inv)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<0> (calc/Maccum_balance_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<1> (calc/Maccum_balance_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<2> (calc/Maccum_balance_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<3> (calc/Maccum_balance_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<4> (calc/Maccum_balance_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<5> (calc/Maccum_balance_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<6> (calc/Maccum_balance_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<7> (calc/Maccum_balance_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<8> (calc/Maccum_balance_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<9> (calc/Maccum_balance_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<10> (calc/Maccum_balance_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<11> (calc/Maccum_balance_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<12> (calc/Maccum_balance_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<13> (calc/Maccum_balance_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  calc/Maccum_balance_cy<14> (calc/Maccum_balance_cy<14>)
+     XORCY:CI->O           1   0.804   0.000  calc/Maccum_balance_xor<15> (calc/Result<15>)
+     FDCE:D                    0.308          calc/balance_15
+    ----------------------------------------
+    Total                      7.697ns (5.214ns logic, 2.483ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_scaler/divided_clk1'
+  Total number of paths / destination ports: 801 / 79
+-------------------------------------------------------------------------
+Offset:              8.233ns (Levels of Logic = 26)
+  Source:            SW<0> (PAD)
+  Destination:       calc/balance_15 (FF)
+  Destination Clock: clock_scaler/divided_clk1 rising
+
+  Data Path: SW<0> to calc/balance_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.218   0.808  SW_0_IBUF (SW_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  calc/Mcompar_next_state_cmp_gt0000_lut<0> (calc/Mcompar_next_state_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<0> (calc/Mcompar_next_state_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<1> (calc/Mcompar_next_state_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<2> (calc/Mcompar_next_state_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<3> (calc/Mcompar_next_state_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<4> (calc/Mcompar_next_state_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Mcompar_next_state_cmp_gt0000_cy<5> (calc/Mcompar_next_state_cmp_gt0000_cy<5>)
+     MUXCY:CI->O          19   0.459   1.164  calc/Mcompar_next_state_cmp_gt0000_cy<6> (calc/Mcompar_next_state_cmp_gt0000_cy<6>)
+     LUT2:I1->O            1   0.704   0.420  calc/balance_not0003_inv2 (calc/balance_not0003_inv)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<0> (calc/Maccum_balance_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<1> (calc/Maccum_balance_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<2> (calc/Maccum_balance_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<3> (calc/Maccum_balance_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<4> (calc/Maccum_balance_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<5> (calc/Maccum_balance_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<6> (calc/Maccum_balance_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<7> (calc/Maccum_balance_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<8> (calc/Maccum_balance_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<9> (calc/Maccum_balance_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<10> (calc/Maccum_balance_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<11> (calc/Maccum_balance_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<12> (calc/Maccum_balance_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  calc/Maccum_balance_cy<13> (calc/Maccum_balance_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  calc/Maccum_balance_cy<14> (calc/Maccum_balance_cy<14>)
+     XORCY:CI->O           1   0.804   0.000  calc/Maccum_balance_xor<15> (calc/Result<15>)
+     FDCE:D                    0.308          calc/balance_15
+    ----------------------------------------
+    Total                      8.233ns (5.841ns logic, 2.392ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 29 / 29
+-------------------------------------------------------------------------
+Offset:              5.307ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       deb/counter_14 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to deb/counter_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            94   1.218   1.457  rst_IBUF (rst_IBUF)
+     LUT2:I0->O           15   0.704   1.017  deb/counter_or00002 (deb/counter_or0000)
+     FDR:R                     0.911          deb/counter_0
+    ----------------------------------------
+    Total                      5.307ns (2.833ns logic, 2.474ns route)
+                                       (53.4% logic, 46.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            deb/a (FF)
+  Destination:       a (PAD)
+  Source Clock:      clk rising
+
+  Data Path: deb/a to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.591   0.420  deb/a (deb/a)
+     OBUF:I->O                 3.272          a_OBUF (a)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_scaler/divided_clk1'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            calc/LED_1 (FF)
+  Destination:       LED<1> (PAD)
+  Source Clock:      clock_scaler/divided_clk1 rising
+
+  Data Path: calc/LED_1 to LED<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.531  calc/LED_1 (calc/LED_1)
+     OBUF:I->O                 3.272          LED_1_OBUF (LED<1>)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.41 secs
+ 
+--> 
+
+Total memory usage is 4522556 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

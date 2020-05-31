@@ -1,0 +1,5 @@
+verilog isim_temp "GPG.vf"
+verilog isim_temp "CLA3Bit.vf"
+verilog isim_temp "CarryLookAHeadHybridlAdderSubtractor15Bit.vf"
+verilog isim_temp "../BaturGultekin_24188_EgeNalbant_24859/CLAtest.v"
+verilog isim_temp "C:/14.7/ISE_DS/ISE//verilog/src/glbl.v"

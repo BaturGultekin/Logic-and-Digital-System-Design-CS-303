@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="BaturGultekin_24188_EgeNalbant_24859.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="CLA3Bit.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="CarryLookAHeadHybridlAdderSubtractor15Bit.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CarryLookAHeadHybridlAdderSubtractor15Bit_CarryLookAHeadHybridlAdderSubtractor15Bit_sch_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="CarryRippleFullAdderSubtractor15Bits.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CarryRippleFullAdderSubtractor15Bits_CarryRippleFullAdderSubtractor15Bits_sch_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="FullAdder.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="GPG.vf"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1573007179" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1573007179">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573010411" xil_pn:in_ck="6670947869176896659" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1573010411">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CLAtest.v"/>
+      <outfile xil_pn:name="CRFA_Test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1573010413" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="862772799825783819" xil_pn:start_ts="1573010413">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573010416" xil_pn:in_ck="-7952390827841046731" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8052896145054681523" xil_pn:start_ts="1573010413">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CLA3Bit.vf"/>
+      <outfile xil_pn:name="CarryLookAHeadHybridlAdderSubtractor15Bit.vf"/>
+      <outfile xil_pn:name="CarryRippleFullAdderSubtractor15Bits.vf"/>
+      <outfile xil_pn:name="FullAdder.vf"/>
+      <outfile xil_pn:name="GPG.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1573007188" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8206317990265876440" xil_pn:start_ts="1573007188">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573010416" xil_pn:in_ck="-2631194830829024770" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1573010416">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CLA3Bit.vf"/>
+      <outfile xil_pn:name="CLAtest.v"/>
+      <outfile xil_pn:name="CRFA_Test.v"/>
+      <outfile xil_pn:name="CarryLookAHeadHybridlAdderSubtractor15Bit.vf"/>
+      <outfile xil_pn:name="CarryRippleFullAdderSubtractor15Bits.vf"/>
+      <outfile xil_pn:name="FullAdder.vf"/>
+      <outfile xil_pn:name="GPG.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1573010417" xil_pn:in_ck="-2631194830829024770" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-149576204925367458" xil_pn:start_ts="1573010416">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

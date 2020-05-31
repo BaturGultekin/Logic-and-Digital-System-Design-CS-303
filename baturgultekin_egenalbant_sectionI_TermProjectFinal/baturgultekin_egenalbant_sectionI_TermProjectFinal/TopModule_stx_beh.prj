@@ -1,0 +1,6 @@
+verilog isim_temp "ssd.v"
+verilog isim_temp "debouncer.v"
+verilog isim_temp "clk_divider.v"
+verilog isim_temp "baturgultekin_egenalbant_sectionI_TermProjectSim.v"
+verilog isim_temp "TopModule.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

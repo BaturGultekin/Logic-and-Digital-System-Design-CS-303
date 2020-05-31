@@ -1,0 +1,5 @@
+verilog work "ssd.v"
+verilog work "debouncer.v"
+verilog work "clk_divider.v"
+verilog work "baturgultekin_egenalbant_sectionI_TermProjectSim.v"
+verilog work "TopModule.v"

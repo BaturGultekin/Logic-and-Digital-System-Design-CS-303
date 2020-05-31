@@ -1,0 +1,437 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: baturgultekin_egenalbant_sectionI_TermProjSimulation.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "baturgultekin_egenalbant_sectionI_TermProjSimulation.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "baturgultekin_egenalbant_sectionI_TermProjSimulation"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-tq144
+
+---- Source Options
+Top Module Name                    : baturgultekin_egenalbant_sectionI_TermProjSimulation
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "baturgultekin_egenalbant_sectionI_TermProjectSim.v" in library work
+Module <baturgultekin_egenalbant_sectionI_TermProjSimulation> compiled
+No errors in compilation
+Analysis of file <"baturgultekin_egenalbant_sectionI_TermProjSimulation.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <baturgultekin_egenalbant_sectionI_TermProjSimulation> in library <work> with parameters.
+	ATM_MENU = "00000000000000000000000000000101"
+	IDLE = "00000000000000000000000000000000"
+	LOCK = "00000000000000000000000000000100"
+	MONEY = "00000000000000000000000000000110"
+	PASS_CHG_1 = "00000000000000000000000000001010"
+	PASS_CHG_2 = "00000000000000000000000000001001"
+	PASS_CHG_3 = "00000000000000000000000000001000"
+	PASS_ENT_1 = "00000000000000000000000000000011"
+	PASS_ENT_2 = "00000000000000000000000000000010"
+	PASS_ENT_3 = "00000000000000000000000000000001"
+	PASS_NEW = "00000000000000000000000000001011"
+	WARNING = "00000000000000000000000000000111"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <baturgultekin_egenalbant_sectionI_TermProjSimulation>.
+	ATM_MENU = 32'sb00000000000000000000000000000101
+	IDLE = 32'sb00000000000000000000000000000000
+	LOCK = 32'sb00000000000000000000000000000100
+	MONEY = 32'sb00000000000000000000000000000110
+	PASS_CHG_1 = 32'sb00000000000000000000000000001010
+	PASS_CHG_2 = 32'sb00000000000000000000000000001001
+	PASS_CHG_3 = 32'sb00000000000000000000000000001000
+	PASS_ENT_1 = 32'sb00000000000000000000000000000011
+	PASS_ENT_2 = 32'sb00000000000000000000000000000010
+	PASS_ENT_3 = 32'sb00000000000000000000000000000001
+	PASS_NEW = 32'sb00000000000000000000000000001011
+	WARNING = 32'sb00000000000000000000000000000111
+Module <baturgultekin_egenalbant_sectionI_TermProjSimulation> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <baturgultekin_egenalbant_sectionI_TermProjSimulation>.
+    Related source file is "baturgultekin_egenalbant_sectionI_TermProjectSim.v".
+    Found 8-bit register for signal <LED>.
+    Found 7-bit register for signal <digit1>.
+    Found 7-bit register for signal <digit2>.
+    Found 7-bit register for signal <digit3>.
+    Found 7-bit register for signal <digit4>.
+    Found 4-bit updown accumulator for signal <balance>.
+    Found 4-bit comparator lessequal for signal <balance$cmp_le0000> created at line 221.
+    Found 16-bit register for signal <counter>.
+    Found 16-bit adder for signal <counter$addsub0000>.
+    Found 4-bit register for signal <current_state>.
+    Found 4-bit comparator equal for signal <next_state$cmp_eq0002> created at line 61.
+    Found 4-bit comparator greater for signal <next_state$cmp_gt0000> created at line 99.
+    Found 4-bit register for signal <password>.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred  60 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <baturgultekin_egenalbant_sectionI_TermProjSimulation> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Accumulators                                         : 1
+ 4-bit updown accumulator                              : 1
+# Registers                                            : 8
+ 16-bit register                                       : 1
+ 4-bit register                                        : 2
+ 7-bit register                                        : 4
+ 8-bit register                                        : 1
+# Comparators                                          : 3
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator lessequal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <digit3_2> (without init value) has a constant value of 0 in block <baturgultekin_egenalbant_sectionI_TermProjSimulation>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Accumulators                                         : 1
+ 4-bit updown accumulator                              : 1
+# Registers                                            : 60
+ Flip-Flops                                            : 60
+# Comparators                                          : 3
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator lessequal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <digit3_2> (without init value) has a constant value of 0 in block <baturgultekin_egenalbant_sectionI_TermProjSimulation>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <baturgultekin_egenalbant_sectionI_TermProjSimulation> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block baturgultekin_egenalbant_sectionI_TermProjSimulation, actual ratio is 10.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 63
+ Flip-Flops                                            : 63
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : baturgultekin_egenalbant_sectionI_TermProjSimulation.ngr
+Top Level Output File Name         : baturgultekin_egenalbant_sectionI_TermProjSimulation
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 45
+
+Cell Usage :
+# BELS                             : 225
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 15
+#      LUT2                        : 8
+#      LUT2_D                      : 2
+#      LUT2_L                      : 5
+#      LUT3                        : 18
+#      LUT3_D                      : 6
+#      LUT3_L                      : 4
+#      LUT4                        : 93
+#      LUT4_D                      : 12
+#      LUT4_L                      : 14
+#      MUXCY                       : 15
+#      MUXF5                       : 13
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 63
+#      FDC                         : 20
+#      FDCE                        : 8
+#      FDE                         : 35
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 44
+#      IBUF                        : 8
+#      OBUF                        : 36
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-4 
+
+ Number of Slices:                       93  out of    960     9%  
+ Number of Slice Flip Flops:             63  out of   1920     3%  
+ Number of 4 input LUTs:                179  out of   1920     9%  
+ Number of IOs:                          45
+ Number of bonded IOBs:                  45  out of    108    41%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 63    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 28    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.358ns (Maximum Frequency: 157.282MHz)
+   Minimum input arrival time before clock: 7.244ns
+   Maximum output required time after clock: 4.394ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.358ns (frequency: 157.282MHz)
+  Total number of paths / destination ports: 867 / 67
+-------------------------------------------------------------------------
+Delay:               6.358ns (Levels of Logic = 5)
+  Source:            balance_0 (FF)
+  Destination:       current_state_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: balance_0 to current_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.591   0.673  balance_0 (balance_0)
+     LUT4:I3->O            2   0.704   0.482  next_state_cmp_gt0000143 (next_state_cmp_gt0000143)
+     LUT3:I2->O            7   0.704   0.712  next_state_cmp_gt0000170 (next_state_cmp_gt0000)
+     LUT4:I3->O            1   0.704   0.000  next_state<0>152_F (N170)
+     MUXF5:I0->O           1   0.321   0.455  next_state<0>152 (next_state<0>152)
+     LUT4:I2->O            1   0.704   0.000  next_state<0>166 (next_state<0>)
+     FDC:D                     0.308          current_state_0
+    ----------------------------------------
+    Total                      6.358ns (4.036ns logic, 2.322ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 208 / 55
+-------------------------------------------------------------------------
+Offset:              7.244ns (Levels of Logic = 6)
+  Source:            SW<0> (PAD)
+  Destination:       current_state_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: SW<0> to current_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.932  SW_0_IBUF (SW_0_IBUF)
+     LUT4:I0->O            2   0.704   0.482  next_state_cmp_gt0000143 (next_state_cmp_gt0000143)
+     LUT3:I2->O            7   0.704   0.712  next_state_cmp_gt0000170 (next_state_cmp_gt0000)
+     LUT4:I3->O            1   0.704   0.000  next_state<0>152_F (N170)
+     MUXF5:I0->O           1   0.321   0.455  next_state<0>152 (next_state<0>152)
+     LUT4:I2->O            1   0.704   0.000  next_state<0>166 (next_state<0>)
+     FDC:D                     0.308          current_state_0
+    ----------------------------------------
+    Total                      7.244ns (4.663ns logic, 2.581ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 35 / 35
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            digit1_5 (FF)
+  Destination:       digit1<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: digit1_5 to digit1<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.531  digit1_5 (digit1_5)
+     OBUF:I->O                 3.272          digit1_5_OBUF (digit1<5>)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.56 secs
+ 
+--> 
+
+Total memory usage is 4522596 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_TermProjectSim/baturgultekin_egenalbant_sectionI_TermProjSim.xst" -ofn "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_TermProjectSim/baturgultekin_egenalbant_sectionI_TermProjSim.syr" 

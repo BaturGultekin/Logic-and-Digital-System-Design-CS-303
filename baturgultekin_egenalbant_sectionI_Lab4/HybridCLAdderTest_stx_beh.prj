@@ -1,0 +1,4 @@
+verilog isim_temp "HybridCLAdder4Module.v"
+verilog isim_temp "HybridCLAdder15Bit.v"
+verilog isim_temp "HybridCLAdderTest.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

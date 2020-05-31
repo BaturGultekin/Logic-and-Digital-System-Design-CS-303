@@ -1,0 +1,10 @@
+Command line:
+   CarryLookAHeadHybridlAdderSubtractor15Bit_CarryLookAHeadHybridlAdderSubtractor15Bit_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  31448
+
+Wed Nov 06 10:22:00 2019
+
+
+ Elaboration Time: 0.4375 sec

@@ -1,0 +1,5 @@
+verilog work "GPG.vf"
+verilog work "CLA3Bit.vf"
+verilog work "CarryLookAHeadHybridlAdderSubtractor15Bit.vf"
+verilog work "../BaturGultekin_24188_EgeNalbant_24859/CLAtest.v"
+verilog work "C:/14.7/ISE_DS/ISE//verilog/src/glbl.v"

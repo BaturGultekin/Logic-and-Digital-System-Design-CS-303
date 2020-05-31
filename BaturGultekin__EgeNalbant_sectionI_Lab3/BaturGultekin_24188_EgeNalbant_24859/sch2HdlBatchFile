@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Xilinx/Projects/BaturGultekin_24188_EgeNalbant_24859/CLA3Bit.vf,-w,C:/Xilinx/Projects/BaturGultekin_24188_EgeNalbant_24859/CLA3Bit.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Xilinx/Projects/BaturGultekin_24188_EgeNalbant_24859/GPG.vf,-w,C:/Xilinx/Projects/BaturGultekin_24188_EgeNalbant_24859/GPG.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Xilinx/Projects/BaturGultekin_24188_EgeNalbant_24859/CarryLookAHeadHybridlAdderSubtractor15Bit.vf,-w,C:/Xilinx/Projects/BaturGultekin_24188_EgeNalbant_24859/CarryLookAHeadHybridlAdderSubtractor15Bit.sch

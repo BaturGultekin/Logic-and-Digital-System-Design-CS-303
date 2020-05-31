@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_Lab4/HybridCLAdder15Bit.xst" -ofn "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_Lab4/HybridCLAdder15Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-4 HybridCLAdder15Bit.ngc HybridCLAdder15Bit.ngd  
+map -intstyle ise -p xc3s100e-tq144-4 -cm area -ir off -pr off -c 100 -o HybridCLAdder15Bit_map.ncd HybridCLAdder15Bit.ngd HybridCLAdder15Bit.pcf 
+par -w -intstyle ise -ol high -t 1 HybridCLAdder15Bit_map.ncd HybridCLAdder15Bit.ncd HybridCLAdder15Bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml HybridCLAdder15Bit.twx HybridCLAdder15Bit.ncd -o HybridCLAdder15Bit.twr HybridCLAdder15Bit.pcf 
+bitgen -intstyle ise -f HybridCLAdder15Bit.ut HybridCLAdder15Bit.ncd 

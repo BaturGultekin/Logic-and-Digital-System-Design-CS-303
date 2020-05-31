@@ -1,0 +1,207 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: baturgultekin_egenalbant_sectionI_TermProjectSim.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "baturgultekin_egenalbant_sectionI_TermProjectSim.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "baturgultekin_egenalbant_sectionI_TermProjectSim"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-tq144
+
+---- Source Options
+Top Module Name                    : baturgultekin_egenalbant_sectionI_TermProjectSim
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "baturgultekin_egenalbant_sectionI_TermProjectSim.v" in library work
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 73 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 217 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 226 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 234 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 242 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 250 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 258 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 266 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 274 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 282 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 290 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 298 Too many digits specified in hex constant
+WARNING:HDLCompilers:301 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 306 Too many digits specified in hex constant
+Module <baturgultekin_egenalbant_sectionI_TermProjectSim> compiled
+No errors in compilation
+Analysis of file <"baturgultekin_egenalbant_sectionI_TermProjectSim.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <baturgultekin_egenalbant_sectionI_TermProjectSim> in library <work> with parameters.
+	A = "0001000"
+	ATM_MENU = "00000101"
+	C = "0110001"
+	E = "0110000"
+	F = "0111000"
+	IDLE = "00000000"
+	L = "1110001"
+	LOCK = "00000100"
+	MONEY = "00000110"
+	O = "0000001"
+	P = "0011000"
+	PASS_CHG_1 = "00001010"
+	PASS_CHG_2 = "00001001"
+	PASS_CHG_3 = "00001000"
+	PASS_ENT_1 = "00000011"
+	PASS_ENT_2 = "00000010"
+	PASS_ENT_3 = "00000001"
+	PASS_NEW = "00001011"
+	S = "0100100"
+	WARNING = "00000111"
+	d = "1000010"
+	dash = "1111110"
+	n = "0001001"
+	one = "1001111"
+	r = "0111001"
+	three = "0000110"
+	two = "0010010"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <baturgultekin_egenalbant_sectionI_TermProjectSim>.
+	A = 7'b0001000
+	ATM_MENU = 8'b00000101
+	C = 7'b0110001
+	E = 7'b0110000
+	F = 7'b0111000
+	IDLE = 8'b00000000
+	L = 7'b1110001
+	LOCK = 8'b00000100
+	MONEY = 8'b00000110
+	O = 7'b0000001
+	P = 7'b0011000
+	PASS_CHG_1 = 8'b00001010
+	PASS_CHG_2 = 8'b00001001
+	PASS_CHG_3 = 8'b00001000
+	PASS_ENT_1 = 8'b00000011
+	PASS_ENT_2 = 8'b00000010
+	PASS_ENT_3 = 8'b00000001
+	PASS_NEW = 8'b00001011
+	S = 7'b0100100
+	WARNING = 8'b00000111
+	d = 7'b1000010
+	dash = 7'b1111110
+	n = 7'b0001001
+	one = 7'b1001111
+	r = 7'b0111001
+	three = 7'b0000110
+	two = 7'b0010010
+WARNING:Xst:905 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 83: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <current_state>, <PW>, <balance>
+ERROR:Xst:880 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 210: Cannot mix blocking and non blocking assignments on signal <PW>.
+ERROR:Xst:880 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 210: Cannot mix blocking and non blocking assignments on signal <balance>.
+ERROR:Xst:899 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 210: The logic for <PW> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 210: The logic for <balance> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 210: The logic for <lock_timeup> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "baturgultekin_egenalbant_sectionI_TermProjectSim.v" line 210: The logic for <warning_timeup> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ 
+Found 6 error(s). Aborting synthesis.
+--> 
+
+Total memory usage is 4506200 kilobytes
+
+Number of errors   :    6 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

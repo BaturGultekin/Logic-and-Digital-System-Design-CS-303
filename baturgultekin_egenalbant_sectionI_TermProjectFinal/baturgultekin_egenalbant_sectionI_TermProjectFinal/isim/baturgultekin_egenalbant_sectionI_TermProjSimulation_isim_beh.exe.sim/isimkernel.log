@@ -1,0 +1,29 @@
+Command line:
+   baturgultekin_egenalbant_sectionI_TermProjSimulation_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51313
+
+Sun Dec 22 15:36:44 2019
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5160.65 Meg
+
+ Total Signals          : 19
+ Total Nets             : 58
+ Total Signal Drivers   : 10
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 40
+ Total Scalar Nets and Variables : 590
+Total Line Count : 300
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 5160.65 Meg
+
+Sun Dec 22 15:36:48 2019
+

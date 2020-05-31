@@ -1,0 +1,5 @@
+set -tmpdir "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_TermProjectFinal/xst/projnav.tmp"
+set -xsthdpdir "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_TermProjectFinal/xst"
+elaborate
+-ifn baturgultekin_egenalbant_sectionI_TermProjSimulation.prj
+-ifmt mixed

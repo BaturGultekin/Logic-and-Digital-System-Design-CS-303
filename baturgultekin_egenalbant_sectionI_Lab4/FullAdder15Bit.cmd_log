@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_Lab4/FullAdder15Bit.xst" -ofn "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_Lab4/FullAdder15Bit.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_Lab4/FullAdder15Bit.xst" -ofn "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_Lab4/FullAdder15Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-4 FullAdder15Bit.ngc FullAdder15Bit.ngd  
+map -intstyle ise -p xc3s100e-tq144-4 -cm area -ir off -pr off -c 100 -o FullAdder15Bit_map.ncd FullAdder15Bit.ngd FullAdder15Bit.pcf 
+par -w -intstyle ise -ol high -t 1 FullAdder15Bit_map.ncd FullAdder15Bit.ncd FullAdder15Bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FullAdder15Bit.twx FullAdder15Bit.ncd -o FullAdder15Bit.twr FullAdder15Bit.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_Lab4/FullAdder15Bit.xst" -ofn "C:/Xilinx/Projects/baturgultekin_egenalbant_sectionI_Lab4/FullAdder15Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-4 FullAdder15Bit.ngc FullAdder15Bit.ngd  
+map -intstyle ise -p xc3s100e-tq144-4 -cm area -ir off -pr off -c 100 -o FullAdder15Bit_map.ncd FullAdder15Bit.ngd FullAdder15Bit.pcf 
+par -w -intstyle ise -ol high -t 1 FullAdder15Bit_map.ncd FullAdder15Bit.ncd FullAdder15Bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FullAdder15Bit.twx FullAdder15Bit.ncd -o FullAdder15Bit.twr FullAdder15Bit.pcf 
+bitgen -intstyle ise -f FullAdder15Bit.ut FullAdder15Bit.ncd 

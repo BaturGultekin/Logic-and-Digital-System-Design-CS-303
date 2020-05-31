@@ -1,0 +1,10 @@
+Command line:
+   CarryRippleFullAdderSubtractor15Bits_CarryRippleFullAdderSubtractor15Bits_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  31416
+
+Wed Nov 06 10:10:16 2019
+
+
+ Elaboration Time: 0.484375 sec
